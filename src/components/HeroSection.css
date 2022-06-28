@@ -9,7 +9,7 @@
     padding-left: 5%;
     margin-right: 5%;
   }
-  img {
+  .hero-full > img {
    height: 78vh;
    width: 50%;
    object-fit: contain;
@@ -106,7 +106,7 @@
       width: 80%;
       margin-bottom: 40px;
     }
-    img {
+    .hero-full>img {
     
      width: 70%;
      margin:0;

@@ -8,7 +8,7 @@ function HeroSection() {
     <div className='hero-full'>
     <div className='hero-container'>
       <div className='hero-text'>
-        <p>" People start to heal the minute they feel heard. "</p>
+        <p>"People start to heal the minute they feel heard."</p>
         <h3>-  Cheryl Richardson</h3>
         </div>
         <div className='hero-btns'>
@@ -16,7 +16,7 @@ function HeroSection() {
        </Button>
     </div>
     </div>
-      <img src='/images/home.jpg' home />
+      <img src='/images/home.jpg' alt="counseling" home />
       </div>
   );
 }

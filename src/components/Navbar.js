@@ -34,27 +34,27 @@ function Navbar() {
           </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to = '/about' className='nav-links' onClick={closeMobileMenu}>
+            <NavLink to = '/about' className={(navData) => navData.isActive ? 'nav-links active': 'nav-links'} onClick={closeMobileMenu}>
               ABOUT
             </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to = '/services' className='nav-links' onClick={closeMobileMenu}>
+            <NavLink to = '/services' className={(navData) => navData.isActive ? 'nav-links active': 'nav-links'} onClick={closeMobileMenu}>
               SERVICES
             </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to = '/faq' className='nav-links' onClick={closeMobileMenu}>
+            <NavLink to = '/faq' className={(navData) => navData.isActive ? 'nav-links active': 'nav-links'} onClick={closeMobileMenu}>
               FAQ
             </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to = '/resources' className='nav-links' onClick={closeMobileMenu}>
+            <NavLink to = '/resources' className={(navData) => navData.isActive ? 'nav-links active': 'nav-links'} onClick={closeMobileMenu}>
               RESOURCES
             </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to = '/contact' className='nav-links' onClick={closeMobileMenu}>
+            <NavLink to = '/contact' className={(navData) => navData.isActive ? 'nav-links active': 'nav-links'} onClick={closeMobileMenu}>
               CONTACT
             </NavLink>
           </li>
