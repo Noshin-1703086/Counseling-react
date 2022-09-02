@@ -67,7 +67,7 @@
     padding:0;
     text-align: center;
     color: white;
-    font-family: 'blogger sans';
+    font-family: 'Blogger Sans Light';
 }
 
 h2>.job-title{
@@ -87,7 +87,7 @@ h2>.job-title{
     bottom:2.5vw;
 }
 
-.slick-prev:hover::before,.slick-prev:focus::before,.slick-next:hover::before,.slick-next:focus::before{
+.slick-prev:hover::before,.slick-next:hover::before{
     background-color:rgb(255,255,255,0.3);
 }
 .slick-prev:before,.slick-next:before{
@@ -127,9 +127,16 @@ h2>.job-title{
 }
 .slick-prev:hover{
     left: -22px;
-    transition: all ease  .2s;
-    
-    
+    transition: all ease  .2s;  
+}
+.slick-prev.slick-disabled:hover{
+    left:-20px;
+}
+.slick-next.slick-disabled:hover{
+    right:1%;
+}
+.slick-prev.slick-disabled:hover::before,.slick-prev.slick-disabled:focus::before,.slick-next.slick-disabled:hover::before,.slick-next.slick-disabled:focus::before{
+    background-color:rgb(255,255,255,0.2);
 }
 @media screen and (max-width: 1024px) {
     .slick-prev:before,.slick-next:before{
@@ -148,10 +155,18 @@ h2>.job-title{
     }
     .slick-next:hover{
         right:1%;
+        transition: all ease .2s;
     }
     .slick-prev:hover{
         left: -27px;
+        transition: all ease .2s;
         
+    }
+    .slick-prev.slick-disabled:hover{
+        left:-25px;
+    }
+    .slick-next.slick-disabled:hover{
+        right:1.2%;
     }
 }
 
@@ -175,10 +190,18 @@ h2>.job-title{
     }
     .slick-next:hover{
         right:0.4%;
+        transition: all ease .2s;
     }
     .slick-prev:hover{
         left: -26px;
+        transition: all ease .2s;
         
+    }
+    .slick-prev.slick-disabled:hover{
+        left:-25px;
+    }
+    .slick-next.slick-disabled:hover{
+        right:0.6%;
     }
       
     }
@@ -207,10 +230,18 @@ h2>.job-title{
         }
         .slick-next:hover{
             right:2.8%;
+            transition: all ease .2s;
         }
         .slick-prev:hover{
             left: -16px;
+            transition: all ease .2s;
             
+        }
+        .slick-prev.slick-disabled:hover{
+            left:-15px;
+        }
+        .slick-next.slick-disabled:hover{
+            right:3%;
         }
           
         }
@@ -235,10 +266,18 @@ h2>.job-title{
             }
             .slick-next:hover{
                 right:9.8%;
+                transition: all ease .2s;
             }
             .slick-prev:hover{
                 left: -1px;
+                transition: all ease .2s;
                 
+            }
+            .slick-prev.slick-disabled:hover{
+                left:0px;
+            }
+            .slick-next.slick-disabled:hover{
+                right:10%;
             }
               
             }

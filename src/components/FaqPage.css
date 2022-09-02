@@ -1,0 +1,76 @@
+.faq-container {
+    background-color: #094838;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+  }
+  .faq-head> h3 {
+    margin:auto;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Be Vietnam';
+    font-weight:lighter;
+    text-align: center;
+  }
+  .faq-head{
+    background-color: rgb(255,255,255,0.19);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width:100%;
+    height:80px;
+    margin-bottom:40px;
+  }
+  .question-container {
+    display: flex;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 18px;
+    list-style: none;
+    text-align: center;
+    width: 60%;
+    flex-direction: column;
+    font-family: 'Blogger Sans Light';
+    font-weight:lighter;
+    margin-top:10px;
+    color:#fff;
+  }
+  .question {
+    padding: 18px;
+    background-color: rgb(255,255,255,0.35);
+    text-align:left;
+    font-size: 1.7rem;
+    display: flex;
+    position: relative;
+    margin-top: 5px;
+  }
+  .question:hover {
+    background-color: rgb(255,255,255,0.25);
+  }
+  
+  .question>p {
+   margin-left: 30px;
+   margin-right: 60px;
+  }
+  .question>.fa-caret-down {
+    right: 50px;
+    position: absolute;
+    cursor: pointer;
+   }
+   .question>.fa-caret-up {
+    right: 50px;
+    position: absolute;
+    cursor: pointer;
+   }
+   .answer {
+    background-color: rgb(255,255,255,0.1);
+    align-items: center;
+    text-align: left;
+  }
+ .answer>p {
+    padding: 30px;
+    color: #fff;
+    font-size:1.4rem;
+  }
