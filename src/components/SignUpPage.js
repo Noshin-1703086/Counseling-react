@@ -11,7 +11,6 @@ const SignUpPage = () => {
 		password: "",
         repeat_password: "",
 	});
-    console.log("YES");
 	const [error, setError] = useState("");
 	const navigate = useNavigate();
 

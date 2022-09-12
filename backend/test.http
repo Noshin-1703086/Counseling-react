@@ -1,9 +1,7 @@
-POST http://localhost:4000/api/users
+POST http://localhost:4000/api/auth
 Content-Type: application/json
 
 {
-    "username":"joey2" ,
-    "email":"joe22@mail.com",
+    "email":"joey2" ,
     "password":"Jose2@josey",
-    "repeat_password":"Jose2@josey",
 }

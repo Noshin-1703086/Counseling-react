@@ -107,3 +107,17 @@
     font-weight: lighter;
     font-size: 1rem;
   }
+  .error2{
+    width: 64vw;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Be Vietnam';
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background-color: rgb(246, 198, 198);
+    color:#094838;
+    border-radius: 5px;
+    text-align: center;
+  }
