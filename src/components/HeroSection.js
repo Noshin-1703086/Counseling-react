@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../App.css';
 import './HeroSection.css';
 import { Button } from 'react-bootstrap';
@@ -12,8 +13,8 @@ function HeroSection() {
         <h3>-  Cheryl Richardson</h3>
         </div>
         <div className='hero-btns'>
-       <Button className='btns' buttonStyle="vertical-align:middle"><span>Get Started</span>
-       </Button>
+        <NavLink to = '/SignUp'> <Button className='btns' buttonStyle="vertical-align:middle"><span>Get Started</span>
+       </Button></NavLink>
     </div>
     </div>
       <img src='/images/home.jpg' alt="counseling" home />

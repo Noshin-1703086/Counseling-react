@@ -1,0 +1,235 @@
+.contact-container {
+    background-color: #094838;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+  }
+  .contact-text-container
+  {
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: center;
+    color: #fff;
+    font-weight:lighter;
+  }
+  .contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+  }
+  .contact-text2
+  {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    margin-left: 180px;
+  }
+  .contact-text2-head
+  {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+  }
+  .contact-text2-3
+  {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    margin-left: 80px;
+  }
+  .contact-text2-2>li> .address
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    object-fit: contain;
+  }
+  .address>h3
+  {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    margin-left: 100px;
+    color:white;
+    font-family: 'Blogger Sans Light';
+    text-align: left;
+  }
+  .address>h4
+  {
+    font-weight: lighter;
+    margin-left: 100px;
+    color:white;
+    font-family: 'Blogger Sans Light';
+    text-align: left;
+  }
+  .contact-text2-2>li>h3
+  {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    margin-left: 100px;
+    color:white;
+    font-family: 'Blogger Sans Light';
+    text-align: left;
+  }
+  .contact-text2-2>li>h4
+  {
+    font-weight: lighter;
+    margin-left: 100px;
+    color:white;
+    font-family: 'Blogger Sans Light';
+    text-align: left;
+  }
+  .contact-text2-3>hr
+  {
+    width:35vw;
+    background-color:#9cfee9;
+    border: none;
+    height: 1px;
+    margin: auto;
+    color:#9cfee9;
+    display:block;
+    margin-top: 70px;
+  }
+  .contact-icon{
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+  }
+  .contact-icon>i{
+    font-size: 30px;
+    margin-left: 25px;
+  }
+  .contact-text2-2{
+    color: #9cfee9;
+    list-style: none;
+  }
+  .contact-text2-2>li{
+    margin-top:70px;
+    display: flex;
+    flex-direction: row;
+  }
+  li>i
+  {
+    font-size: 30px;
+  }
+  .contact-text-container>div:nth-child(1) {
+    width:50vw;
+    height: 65vh;
+    margin-left:70px;
+    background-color: rgb(255,255,255,0.19);
+    align-items: center;
+  }
+  .contact-text>form
+  {
+    width:100%;
+    height:100%;
+  }
+  input::-webkit-input-placeholder { 
+    position: absolute;
+    color: #094838;
+    font-family: 'Blogger Sans Light';
+    font-weight:lighter;
+    font-size: 1.2rem;
+    text-align: left;
+    left: 20px;
+    top:9px;
+  }
+  input::placeholder {
+    position: absolute;
+    color: #094838;
+    font-family: 'Blogger Sans Light';
+    font-weight:lighter;
+    font-size: 1.2rem;
+    text-align: left;
+    left: 20px;
+    top:9px;
+  }
+  input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+textarea::-webkit-input-placeholder { 
+    position: absolute;
+    color: #094838;
+    font-family: 'Blogger Sans Light';
+    font-weight:lighter;
+    font-size: 1.2rem;
+    text-align: left;
+    left: 20px;
+    top:9px;
+  }
+  textarea::placeholder {
+    position: absolute;
+    color: #094838;
+    font-family: 'Blogger Sans Light';
+    font-weight:lighter;
+    font-size: 1.2rem;
+    text-align: left;
+    left: 20px;
+    top:9px;
+  }
+  textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+  input[name="Name"]
+  {
+    margin-top: 5%;
+    width: 39vw;
+    height:5.2vh;
+    margin-bottom: 5%;
+    outline:none;
+    padding:20px;
+  }
+  input[name="Email"]
+  {
+    width: 39vw;
+    height:5.2vh;
+    margin-bottom: 5%;
+    outline:none;
+    padding:20px;
+  }
+  textarea[name="Message"]
+  {
+    width: 39vw;
+    height:23vh;
+    margin-bottom: 3.5%;
+    outline:none;
+    padding:20px;
+  }
+  .sendbutton>button
+  {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #094838;
+    border: none;
+    color:white ;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 155px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    font-family: 'Be Vietnam';
+    letter-spacing: 1.5px;
+  }
+  .contact-head> h3 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: 'courgette';
+    font-weight:lighter;
+    text-align: center;
+  }
+  .contact-head> h3> i {
+    margin-left:6px;
+    margin-right:3px;
+  }
