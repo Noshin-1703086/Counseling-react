@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import './Navbar2.css';
@@ -6,24 +6,23 @@ import "@fontsource/cooper-hewitt";
 import axios from 'axios';
 
 function Navbar2() {
+  const [show, setShow] = useState(false);
   const [click, setClick] = useState (false);
-  const username=JSON.stringify(localStorage.getItem('token'));
   const handleClick = () => setClick(!click);
   const closeMobileMenu= () => setClick(false);
   const [user, setUser] =useState('');
-  const getUser = () => {
+  useEffect(() => {
     axios.get('http://localhost:4000/api/getinfo',{
       params: {
         token: localStorage.getItem('token')
       }})
-    .then(res => {
-      setUser(res.data);
-      console.log(user)
-    }).catch(err => {
-      console.log(err)
-    })
-  }
-
+      .then(res => {
+        setUser(res.data);
+        console.log(user)
+      }).catch(err => {
+        console.log(err)
+      })
+  })
   return (
     <>
     <nav className="navbar2">
@@ -42,36 +41,39 @@ function Navbar2() {
         </div>
         <ul className={click? 'nav-menu2 active': 'nav-menu2'}>
           <li className='nav-item2'>
-            <NavLink to = '/about' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
+            <NavLink to = '/about2' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
               ABOUT
             </NavLink>
           </li>
           <li className='nav-item2'>
-            <NavLink to = '/services' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
+            <NavLink to = '/services2' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
               SERVICES
             </NavLink>
           </li>
           <li className='nav-item2'>
-            <NavLink to = '/faq' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
+            <NavLink to = '/faq2' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
               FAQ
             </NavLink>
           </li>
           <li className='nav-item2'>
-            <NavLink to = '/resources' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
+            <NavLink to = '/resources2' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
               RESOURCES
             </NavLink>
           </li>
           <li className='nav-item2'>
-            <NavLink to = '/contact' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
+            <NavLink to = '/contact2' className={(navData) => navData.isActive ? 'nav-links2 active': 'nav-links2'} onClick={closeMobileMenu}>
               CONTACT
             </NavLink>
           </li>
         </ul>
         <div className='username'>
-        <NavLink to = '/' className='username_link' onClick={getUser}>
-              Hello, {user}
-        </NavLink>
+        <div className='username_link'>
+          Hello, {user} <i onClick={() => setShow(!show)} class = "fa-solid fa-caret-down"></i>
         </div>
+        </div>
+        <NavLink to = '/' className='logout' onClick={()=>localStorage.clear()} >
+             {show && <p>Sign Out</p>}
+        </NavLink>
         </div>
 
     </nav>
