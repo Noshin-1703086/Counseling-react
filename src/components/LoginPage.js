@@ -21,7 +21,7 @@ const LoginPage = () => {
 			const url = "http://localhost:4000/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
-			window.location = "/";
+			window.location = "/Dashboard";
 		} catch (error) {
 			if (
 				error.response &&

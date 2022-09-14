@@ -1,11 +1,13 @@
 import React from 'react';
 import '../../App.css';
 import FaqPage from '../FaqPage';
+import Navbar from '../Navbar';
 
 function Faq() {
   return (
     <div>
-       <FaqPage/>
+      <Navbar/>
+      <FaqPage/>
     </div>
   );
 }
