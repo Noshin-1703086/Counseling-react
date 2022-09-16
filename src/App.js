@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import About2 from './components/pages/About2';
@@ -16,8 +16,9 @@ import SignUp from './components/pages/SignUp';
 import Login from './components/pages/Login';
 import Dashboard from './components/pages/Dashboard';
 import IPA from './components/pages/IPA';
-import PrivateRoutes from './utils/PrivateRoutes'
-import PrivateRoutes2 from './utils/PrivateRoutes2'
+import Confirm from './components/pages/Confirm';
+import PrivateRoutes from './utils/PrivateRoutes';
+import PrivateRoutes2 from './utils/PrivateRoutes2';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path='/resources2' element={<Resources2/>} />
         <Route path='/contact2' element={<Contact2/>} />
         <Route path='/IPA' element={<IPA/>} />
+        <Route path='/Confirm' element={<Confirm/>} />
       </Route>
      </Routes>
      </Router>

@@ -19,7 +19,7 @@ const userInfoSchema = new mongoose.Schema({
         },
         economic_status: {
             type: String,
-            enum: ['Lower Class', 'Lower Middle Class','Upper Middle Class','Upper'],
+            enum: ['Lower Class', 'Lower Middle Class','Upper Middle Class','Upper Class'],
             required : true 
         },
         age: {
@@ -73,7 +73,13 @@ const userInfoSchema = new mongoose.Schema({
             type: String,
             enum: ['Individual','Couples','Family'],
             required : true,
-        }
+        },
+        therapist: {
+            type: String,
+            required : true,
+            default: "Not Assigned",
+        },
+
 });
 
 const UserInfo = mongoose.model("user_info",userInfoSchema);

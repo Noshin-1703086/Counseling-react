@@ -1,10 +1,24 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React,{useState,useEffect} from 'react';
 import '../App.css';
 import './IPAPage.css';
 import axios from 'axios';
 
 const IPAPage = () => {
+  useEffect(() => {
+    axios.get('http://localhost:4000/api/check_confirmation',{
+      params: {
+        token: localStorage.getItem('token')
+      }})
+      .then(res => {
+        if(res.data===true)
+        {
+            window.location = "/Confirm";
+        }
+      }).catch(err => {
+        console.log(err)
+      })
+  })
 	const [data, setData] = useState({
 		name: "",
 		gender: "",

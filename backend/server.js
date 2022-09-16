@@ -8,6 +8,9 @@ const connection = require("./db");
 const authRoutes = require("./routes/auth")
 const infoRoutes = require("./routes/getinfo")
 const bookRoutes = require("./routes/bookinfo")
+const confirm_bookRoutes = require("./routes/confirminfo")
+const getscheduleRoutes = require("./routes/getschedule")
+const confirm_appRoutes = require("./routes/confirm_app")
 
 dotenv.config()
 
@@ -19,5 +22,9 @@ app.use('/api/users', routesUrls)
 app.use('/api/auth', authRoutes)
 app.use('/api/getinfo', infoRoutes)
 app.use('/api/book', bookRoutes)
+app.use('/api/check_confirmation', confirm_bookRoutes)
+app.use('/api/getschedule', getscheduleRoutes)
+app.use('/api/confirm', confirm_appRoutes)
+
 const port = process.env.PORT || 4000;
 app.listen(port, console.log(`Listening on port ${port}...`));
