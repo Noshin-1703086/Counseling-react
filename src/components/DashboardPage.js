@@ -1,28 +1,34 @@
-import axios from 'axios';
-import React,{Component} from 'react';
+import React from 'react';
 import '../App.css';
 import './DashboardPage.css';
+import { Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
-export default class DashboardPage extends Component {
-  componentDidMount(){
-    const config = {
-      headers: {
-        Authorization: 'Bearer' + localStorage.getItem('token')
-      }
-      
-    };
-    axios.get('user', config).then(
-      res => {
-        console.log(res);
-      },
-      err => {
-        console.log(err);
-      }
-    )
-  }
-  render(){
-    return(
-      <h2>You are not logged in</h2>
-    )
-  }
+function DashboardPage() {
+  return (
+    <div className='dash-container'>
+      <div className='dash-text-container'>
+      <div className='dash-head'>
+        <h3>INITIAL PSYCHOLOGICAL ASSESSMENT</h3>
+        <hr/>
+      </div>
+      <div className='dash-text'>
+        <p>Initial psychological assessment (IPA) is the first step of taking help for your mental wellbeing. 
+          In this session, you will talk with a professional to help decide what kind of support you need. 
+          In an IPA session a mental health professional will guide you to talk about your needs which will 
+          cover symptoms and experiences, feelings, thoughts and actions, physical health and wellbeing, medical 
+          and psychological history, housing and financial circumstances, employment and training needs, social 
+          and family relationships, use of drugs and alcohol, past experiences of similar problems, your safety 
+          and other people's, strengths and skills, hopes and aspirations for the future etc. You can share as little 
+          or as much as you want. This will help to diagnose the problem areas, causes and design a treatment plan for 
+          you and work on with you. </p>
+      </div>
+      </div>
+      <div className='sendbutton4'>
+      <NavLink to = '/IPA'><Button className='submit_ipa'>Book Appointment Now</Button></NavLink>
+      </div>
+    </div>
+  );
 }
+
+export default DashboardPage;

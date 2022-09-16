@@ -1,4 +1,30 @@
-.about-container {
+.dash-head
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+.dash-head>h3
+{
+  margin-top: 15px;
+  font-family: 'Be Vietnam';
+  color:white;
+  font-weight: lighter;
+  font-size:26px;
+}
+.dash-head>hr
+{
+    width:540px;
+    background-color:#9cfee9;
+    border: none;
+    height: 1px;
+    margin: auto;
+    color:#9cfee9;
+    margin-top: 20px;
+}
+.dash-container {
     background-color: #094838;
     height:fit-content;
     display: flex;
@@ -8,36 +34,61 @@
     object-fit: contain;
     padding-top: 60px;
   }
-  .about-text-container
+  .dash-text-container
   {
-    align-items: center;
-    text-align: center;
-  }
-  .about-text {
-    width:921px;
+    width:80vw;
     background-color: rgb(255,255,255,0.205);
     margin: auto;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
+  }
+  .dash-text {
+    align-items: center;
+    text-align: center;
     
   }
- .about-text>p {
+ .dash-text>p {
     padding: 40px;
     color: #fff;
-    font-size:26px;
+    font-size:23px;
     font-family: 'Blogger Sans Light';
     font-weight:lighter;
     text-align: center;
+    line-height: 1.4;
   }
-  .about-text2> h3 {
+  .dash-text2> h3 {
     margin-top: 50px;
     color: #fff;
     font-size: 1.875rem;
     font-family: 'be vietnam';
     font-weight:lighter;
   }
+  .submit_ipa
+  {
+    display: inline-block;
+    background-color: white;
+    border: none;
+    color: #094838;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    width: 39vw;
+    cursor: pointer;
+    margin: 5px;
+    font-weight:bold;
+    font-family: 'Arial';
+  }
+  .sendbutton4{
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  .submit_ipa:hover
+  {
+    background-color: rgb(255,255,255,0.8);
+  }
   @media screen and (max-width: 1040px) {
-    .about-text {
+    .dash-text {
       width:90%;
       margin-left: 5vw;
       margin-right: 5vw;

@@ -15,6 +15,7 @@ import Contact2 from './components/pages/Contact2';
 import SignUp from './components/pages/SignUp';
 import Login from './components/pages/Login';
 import Dashboard from './components/pages/Dashboard';
+import IPA from './components/pages/IPA';
 import PrivateRoutes from './utils/PrivateRoutes'
 import PrivateRoutes2 from './utils/PrivateRoutes2'
 
@@ -40,6 +41,7 @@ function App() {
         <Route path='/faq2' element={<Faq2/>} />
         <Route path='/resources2' element={<Resources2/>} />
         <Route path='/contact2' element={<Contact2/>} />
+        <Route path='/IPA' element={<IPA/>} />
       </Route>
      </Routes>
      </Router>

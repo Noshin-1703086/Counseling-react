@@ -72,7 +72,7 @@
    font-weight: lighter;
    font-size: 0.9rem;
   }
-  hr{
+  .Resource-text>div:nth-child(1)>hr{
     display:none;
     width:400px;
     background-color:#9cfee9;

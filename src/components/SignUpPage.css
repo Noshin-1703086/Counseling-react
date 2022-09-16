@@ -40,7 +40,7 @@
     text-align: center;
     width:64vw;
   }
-  label
+  .Name_class>label
   {
     position: absolute;
     color:white;

@@ -23,11 +23,14 @@
       -webkit-text-stroke: 1px #094838;
       color:#fff;
       font-family: 'cooper hewitt';
+      position: sticky;
     }
     .small-logo2{
       font-family: 'courgette';
       font-size: 9.5px;
       margin-top: -2px;
+      position: sticky;
+      width:max-content;
     }
   
     .navbar-logo2 {
@@ -41,7 +44,8 @@
       flex-direction: row;
       left: 20px;
       flex-direction: column;
-      position: fixed;
+      position: sticky;
+      width:max-content;
     }
     
     .fa-envira {
@@ -58,7 +62,7 @@
       width:100vw;
       justify-content: center;
       right: 20px;
-      position: fixed;
+      position: sticky;
       font-family: 'be vietnam';
     }
     
@@ -103,10 +107,10 @@
         justify-content: flex-end;
         display: flex;
         text-align: center;
-        width:fit-content;
+        width:max-content;
         justify-content: center;
         right: 20px;
-        position: fixed;
+        position: sticky;
         font-family: 'Blogger Sans';
         font-weight: lighter;
     }
@@ -119,6 +123,7 @@
       padding: 1px 0.5rem;
       height: 100%;
       font-size: 18px;
+      width: max-content;
     }
     .username_link>i 
     {

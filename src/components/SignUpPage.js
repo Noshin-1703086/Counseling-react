@@ -45,7 +45,7 @@ return (
                     <form onSubmit={handleSubmit}>
                         <div className='Name_class'>
                             <label id="Username">USERNAME</label><br/>
-                            <input type="text" name="username" id="Userame" onChange={handleChange} value={data.username} required/>
+                            <input type="text" name="username" id="Username" maxlength="30" onChange={handleChange} value={data.username} required/>
                         </div>
                         <div className='Name_class'>
                             <label id="Email">EMAIL</label><br/>
@@ -53,11 +53,11 @@ return (
                         </div>
                         <div className='Name_class'>
                             <label id="Password">PASSWORD</label><br/>
-                            <input type="password" name="password" id="Password" onChange={handleChange} value={data.password} required/>
+                            <input type="password" name="password" id="Password" minlength="10" maxlength="20" onChange={handleChange} value={data.password} required/>
                         </div>
                         <div className='Name_class'>
                             <label id="R_Password">CONFIRM PASSWORD</label><br/>
-                            <input type="password" name="repeat_password" id="R_Password" onChange={handleChange} value={data.r_password} required/>
+                            <input type="password" name="repeat_password" id="R_Password" minlength="10" maxlength="20" onChange={handleChange} value={data.r_password} required/>
                         </div>
                         {error && <div className="error">{error}</div>}
                         <div className='sendbutton2'>

@@ -1,7 +1,21 @@
-POST http://localhost:4000/api/auth
+POST http://localhost:4000/api/book
 Content-Type: application/json
 
 {
-    "email":"joey2" ,
-    "password":"Jose2@josey",
+  "name": "Noshin Tabassum",
+  "gender": "Female",
+  "economic_status": "Lower Middle Class",
+  "age": "25",
+  "blood_group": "A+",
+  "marital_status": "Unmarried",
+  "location": "Rajshahi",
+  "occupation": "Student",
+  "contact": "01716619095",
+  "contact2": "01716619095",
+  "date_of_birth": "1998-09-05",
+  "illness": "None",
+  "problem": "Anxiety, Depression, Self Harm",
+  "service_type": "Individual",
+  "bkash_no": "01716619095",
+  "transaction_no": "0171661909",
 }

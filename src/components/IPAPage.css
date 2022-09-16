@@ -1,0 +1,524 @@
+.IPA-pay
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  object-fit: contain;
+  text-align: left;
+  width:39vw;
+  background-color: white;
+  margin-left: 180px;
+  color:#094838;
+  font-family:"Blogger Sans";
+  font-weight:lighter;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+.IPA-pay>div:nth-child(1)
+{
+  margin-top: 20px;
+}
+.IPA-pay>div:nth-child(3)
+{
+  margin-bottom: 20px;
+}
+.IPA-pay-text
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  align-items: left;
+  object-fit: contain;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.IPA-pay>div:nth-child(1)>div:nth-child(2)
+{
+  margin-left: 75px;
+}
+.IPA-pay>div:nth-child(2)>div:nth-child(2)
+{
+  margin-left: 100px;
+}
+.IPA-pay>div:nth-child(3)>div:nth-child(2)
+{
+  margin-left: 110px;
+}
+.IPA-pay-text-head
+{
+  display: flex;
+  justify-content:left;
+  align-items: left;
+  object-fit: contain;
+  text-align: left;
+  margin-left: 10px;
+}
+.IPA-pay-text-info
+{
+  display: flex;
+  justify-content:left;
+  align-items: left;
+  object-fit: contain;
+  text-align: left;
+}
+
+.row-input
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  text-align: center;
+  grid-gap:250px;
+  margin-top: 0;
+}
+.row-input3
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  object-fit: contain;
+  text-align: left;
+  grid-gap:143px;
+  margin-left: 180px;
+}
+.row-input2
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  align-items: left;
+  object-fit: contain;
+  text-align: center;
+  grid-gap:175px;
+  margin-top: 0;
+  margin-left: 187px;
+}
+
+.IPA-head
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  text-align: center;
+}
+
+.IPA-text-container
+  {
+    background-color: #094838;
+    width:98.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+  }
+  .IPA-head>h3
+  {
+    font-size: 1.7rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color:white;
+    font-family: 'Be Vietnam';
+    text-align:center;
+    font-weight: lighter;
+  }
+  .IPA-text{
+    background-color: rgb(255,255,255,0.19);
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+    width:64vw;
+  }
+  .Name_class_ipa
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    object-fit: contain;
+    text-align: left;
+
+  }
+  .Name_class_ipa4
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    object-fit: contain;
+    text-align: left;
+  }
+  .Name_class_ipa2
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    object-fit: contain;
+    text-align: left;
+
+  }
+  .Name_class_ipa>label
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    left: 467.5px;
+    margin-top: 0;
+  }
+  .Name_class_ipa4>label#Location
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    left: 467.5px;
+    margin-top: 0;
+  }
+  .Name_class_ipa4>label#Occupation
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    right: 489.5px;
+    margin-top: 0;
+  }
+  .Name_class_ipa4>label#Contact
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    left: 467.5px;
+    margin-top: 0;
+  }
+  .Name_class_ipa4>label#Contact2
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    right: 489.5px;
+    margin-top: 0;
+  }
+
+  .Name_class_ipa3>label#Blood
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    left: 650.5px;
+    margin-top: 0;
+  }
+  .Name_class_ipa3>label#M_Status
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    right: 489.5px;
+    margin-top: 0;
+  }
+  .Name_class_ipa3>label#Age
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    left: 467.5px;
+    margin-top: 0;
+  }
+  .Name_class_ipa2>label
+  {
+    position: absolute;
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    right: 489.5px;
+    margin-top: 0;
+  }
+  .IPA-text>form
+  {
+    width:100%;
+    height:100%;
+  }
+  .Name_class_ipa>input
+  {
+    margin-left: 180px;
+    margin-top: 3px;
+    width: 39vw;
+    height:5.2vh;
+    margin-bottom: 20px;
+    outline:none;
+    padding:10px;
+    border-width: 0 0 2px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    border-color: white;
+    background-color: rgb(255,255,255,0)
+  }
+  .Name_class_ipa>select
+  {
+    margin-left: -60px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 8vw;
+    height:4.5vh;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    border: 0;
+    color: #094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    text-align: left;
+    padding-left:10px;
+    cursor: pointer;
+  }
+  .Name_class_ipa>input#Date_of_birth
+  {
+    margin-left: 185px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 18vw;
+    height:4.5vh;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    border: 0;
+    color: #094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    text-align: left;
+    padding-left:10px;
+    cursor: pointer;
+  }
+  .Name_class_ipa>select#Service_type
+  {
+    margin-left: 185px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 18vw;
+    height:4.5vh;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    border: 0;
+    color: #094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    text-align: left;
+    padding-left:10px;
+    cursor: pointer;
+  }
+  .Name_class_ipa3>input
+  {
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 8vw;
+    height:4.5vh;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    border: 0;
+    color: #094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    text-align: left;
+    padding-left:10px;
+    cursor: pointer;
+  }
+  .Name_class_ipa3>select#M_Status
+  {
+    margin-left: -40px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 8vw;
+    height:4.5vh;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    border: 0;
+    color: #094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    text-align: left;
+    padding-left:10px;
+    cursor: pointer;
+  }
+  .Name_class_ipa3>select#Blood
+  {
+    margin-left: -89.5px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 8vw;
+    height:4.5vh;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    border: 0;
+    color: #094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    text-align: left;
+    padding-left:10px;
+    cursor: pointer;
+  }
+  .Name_class_ipa2>select
+  {
+    margin-right:-40px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    width: 14vw;
+    height:4.5vh;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    border: 0;
+    color: #094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    text-align: left;
+    padding-left:10px;
+    cursor: pointer;
+  }
+  .Name_class_ipa>select>option
+  {
+    color: #094838;
+  }
+  .Name_class_ipa2>select>option
+  {
+    color: #094838;
+  }
+  .Name_class_ipa4>input#Location
+  {
+    margin-left: 0px;
+    margin-top: 3px;
+    width: 15vw;
+    height:5.2vh;
+    margin-bottom: 20px;
+    outline:none;
+    padding:10px;
+    border-width: 0 0 2px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    border-color: white;
+    background-color: rgb(255,255,255,0)
+  }
+  .Name_class_ipa4>input#Occupation
+  {
+    margin-left: 0px;
+    margin-top: 3px;
+    width: 15vw;
+    height:5.2vh;
+    margin-bottom: 20px;
+    outline:none;
+    padding:10px;
+    border-width: 0 0 2px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    border-color: white;
+    background-color: rgb(255,255,255,0)
+  }
+  .Name_class_ipa4>input#Contact
+  {
+    margin-left: 0px;
+    margin-top: 3px;
+    width: 15vw;
+    height:5.2vh;
+    margin-bottom: 20px;
+    outline:none;
+    padding:10px;
+    border-width: 0 0 2px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    border-color: white;
+    background-color: rgb(255,255,255,0)
+  }
+  .Name_class_ipa4>input#Contact2
+  {
+    margin-left: 0px;
+    margin-top: 3px;
+    width: 15vw;
+    height:5.2vh;
+    margin-bottom: 20px;
+    outline:none;
+    padding:10px;
+    border-width: 0 0 2px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    border-color: white;
+    background-color: rgb(255,255,255,0)
+  }
+
+  .ipa_sendbutton2>input
+  {
+    display: inline-block;
+    background-color: white;
+    border: none;
+    color: #094838;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    width: 19vw;
+    cursor: pointer;
+    margin: 5px;
+    font-weight:bold;
+    font-family: 'Arial';
+  }
+  .ipa_sendbutton2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .ipa_sendbutton2>input:hover
+  {
+    background-color: rgb(255,255,255,0.8);
+  }

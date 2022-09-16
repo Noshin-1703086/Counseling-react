@@ -67,7 +67,7 @@
    font-weight: lighter;
    font-size: 0.8rem;
   }
-  hr{
+  .service-text>div:nth-child(1)>hr{
     display:none;
     width:275px;
     background-color:#9cfee9;
@@ -132,7 +132,7 @@
     .service-text:hover>div:nth-child(1){
         font-size:20px;
     }
-    hr{
+    .service-text:hover>div:nth-child(1)>hr{
         width:220px;
     }
 }
@@ -142,7 +142,7 @@
     }
 }
 @media screen and (max-width: 800px) {
-    hr{
+  .service-text:hover>div:nth-child(1)>hr{
         width:200px;
     }
     .service-text:hover>div:nth-child(1){
@@ -181,13 +181,13 @@
     .service-text:hover>div:nth-child(3){
        font-size: 1.7vw;
     }
-    hr{
+    .service-text:hover>div:nth-child(1)>hr{
         width:275px;
     }
     .service-text:hover>div:nth-child(1){
         font-size:3.5vw;
     }
-    hr{
+    .service-text:hover>div:nth-child(1)>hr{
         width:40vw;
     }
 }
