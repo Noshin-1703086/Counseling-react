@@ -5,18 +5,6 @@ import './IPAPage.css';
 import axios from 'axios';
 
 const IPAPage = () => {
-    const [user, setUser] =useState('');
-  useEffect(() => {
-    axios.get('http://localhost:4000/api/getinfo',{
-      params: {
-        token: localStorage.getItem('token')
-      }})
-      .then(res => {
-        setUser(res.data);
-      }).catch(err => {
-        console.log(err)
-      })
-  })
 	const [data, setData] = useState({
 		name: "",
 		gender: "",
