@@ -1,0 +1,78 @@
+   .breathing-head2{
+    margin-left: 250px;
+    margin-top: 100px;
+   }
+   .breathing-head2>span{
+    font-size: 1.7rem;
+    color:white;
+    font-family: 'Be Vietnam';
+    text-align:center;
+    font-weight: lighter;
+    width: max-content;
+    margin-left: +90px;
+   }
+  .breathing-head{
+    margin-top: -100px;
+    margin-left: 250px;
+  }
+  .breathing-head>h3
+  {
+    font-size: 1.7rem;
+    color:white;
+    font-family: 'Be Vietnam';
+    text-align:center;
+    font-weight: lighter;
+    width: max-content;
+    margin-left: +90px;
+  }
+
+.breathing-full {
+    background-color: #094838;
+    height:92vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+  }
+  .box {
+    margin-left: 350px;
+    margin-top: 150px;
+  }
+  .zoom-in-out-box {
+    margin: 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(255,255,255,0.19);
+    animation: zoom-in-zoom-out 10s ease-in infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  span::before {
+    content: "Breathe In";
+    animation: animate 10s ease-out infinite;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+    0% {
+        content: "Breathe In";
+    }
+    100% {
+        content: "Breathe Out";
+    }
+
+}
