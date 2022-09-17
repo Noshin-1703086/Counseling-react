@@ -20,6 +20,7 @@ import IPA from './components/pages/IPA';
 import Confirm from './components/pages/Confirm';
 import Report from './components/pages/Report';
 import Breathing from './components/pages/Breathing';
+import Journal from './components/pages/Journal';
 import PrivateRoutes from './utils/PrivateRoutes';
 import PrivateRoutes2 from './utils/PrivateRoutes2';
 
@@ -50,6 +51,7 @@ function App() {
         <Route element={<Dashboard_C/>} path="/Dashboard_C"/>
         <Route path='/report' element={<Report/>}/>
         <Route path='/breathing' element={<Breathing/>}/>
+        <Route path='/journal' element={<Journal/>}/>
       </Route>
      </Routes>
      </Router>

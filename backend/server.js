@@ -13,6 +13,8 @@ const getscheduleRoutes = require("./routes/getschedule")
 const confirm_appRoutes = require("./routes/confirm_app")
 const session_infoRoutes = require("./routes/session_info")
 const getidRoutes = require("./routes/get_id")
+const postjournalRoutes = require("./routes/postjournal")
+const J_getinfoRoutes = require("./routes/j_getinfo")
 
 dotenv.config()
 
@@ -29,6 +31,8 @@ app.use('/api/getschedule', getscheduleRoutes)
 app.use('/api/confirm', confirm_appRoutes)
 app.use('/api/get_session_info', session_infoRoutes)
 app.use('/api/Get_id', getidRoutes)
+app.use('/api/J_post', postjournalRoutes)
+app.use('/api/J_getinfo', J_getinfoRoutes)
 
 const port = process.env.PORT || 4000;
 app.listen(port, console.log(`Listening on port ${port}...`));
