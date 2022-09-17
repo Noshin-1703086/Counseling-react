@@ -15,6 +15,7 @@ import Contact2 from './components/pages/Contact2';
 import SignUp from './components/pages/SignUp';
 import Login from './components/pages/Login';
 import Dashboard from './components/pages/Dashboard';
+import Dashboard_C from './components/pages/Dashboard_C';
 import IPA from './components/pages/IPA';
 import Confirm from './components/pages/Confirm';
 import PrivateRoutes from './utils/PrivateRoutes';
@@ -43,7 +44,8 @@ function App() {
         <Route path='/resources2' element={<Resources2/>} />
         <Route path='/contact2' element={<Contact2/>} />
         <Route path='/IPA' element={<IPA/>} />
-        <Route path='/Confirm' element={<Confirm/>} />
+        <Route path='/Confirm' element={<Confirm/>}/>
+        <Route element={<Dashboard_C/>} path="/Dashboard_C"/>
       </Route>
      </Routes>
      </Router>

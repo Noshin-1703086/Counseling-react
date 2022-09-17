@@ -156,9 +156,9 @@ return (
                             <label id="Service_type">TYPE OF SERVICE</label><br/>
                             <select name="service_type" id="Service_type" minlength="1" onChange={handleChange} value={data.service_type} required>
                                 <option value=""></option>
-                                <option value="Individual">Individual Psychotherapy</option>
-                                <option value="Couples">Couples Therapy</option>
-                                <option value="Family">Family Therapy</option>
+                                <option value="Individual Psychotherapy">Individual Psychotherapy</option>
+                                <option value="Couples Therapy">Couples Therapy</option>
+                                <option value="Family Therapy">Family Therapy</option>
                             </select>
                         </div>
                         <div className='IPA-head'>

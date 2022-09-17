@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import React,{useState,useEffect} from 'react';
 import '../App.css';
-import './ConfirmPage.css';
+import './DashboardPage2.css';
 import axios from 'axios';
 
-const ConfirmPage = () => {
+const DashboardPage2 = () => {
   useEffect(() => {
     axios.get('http://localhost:4000/api/check_confirmation',{
       params: {
@@ -19,56 +19,42 @@ const ConfirmPage = () => {
         console.log(err)
       })
   })
+  const [type, setType] =useState('');
   const [therapist, setTherapist] =useState('');
+  const [date, setDate] =useState('');
+  const [time, setTime] =useState('');
+  const [link, setLink] =useState('');
   useEffect(() => {
-  axios.get('http://localhost:4000/api/getschedule',{
+  axios.get('http://localhost:4000/api/get_session_info',{
         params: {
           token: localStorage.getItem('token')
         }})
         .then(res => {
-            setTherapist(res.data);
-            console.log(res.data);
+            if(res.data==false)
+            {
+                window.location = "/Dashboard";
+            }
+            setType(res.data.type);
+            setTherapist(res.data.therapist);
+            setDate(res.data.date);
+            setTime(res.data.time);
+            setLink(res.data.link);
         }).catch(err => {
           console.log(err)
         })
     })
-  const [data, setData] = useState({
-		time: "",
-        date:"",
-	});
-	const handleChange = ({ currentTarget: input }) => {
-		setData({ ...data, [input.name]: input.value });
-	};
-    const navigate = useNavigate();
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const url = "http://localhost:4000/api/confirm";
-            const { data: res } = await axios.post(url,{
-                params: {
-                  token: localStorage.getItem('token'),
-                  data: data,
-                  type: "IPA"
-                }});
-            navigate("/Dashboard_C");
-            console.log(res.message);
-            } catch (error) {
-            console.log(error)
-            }
-        };
-    
 return (
     <div>
-            <div className='confirm-text-container'>
-                <div className='confirm-text'>
-                    <div className='confirm-head'>
-                        <h3>APPOINTMENT INFORMATION</h3>
+            <div className='c_dash-text-container'>
+                <div className='c_dash_confirm-text'>
+                    <div className='c_dash_confirm-head'>
+                        <h3>SESSION INFORMATION</h3>
                     </div>
-                    <form onSubmit={handleSubmit}>
+                    <form>
                         <div className='Name_class_confirm'>
                             <label id="Type">TYPE OF SESSION</label><br/>
                             <div className="confirm_value">
-                                <h3>Initial Psychological Assessment</h3>
+                                <h3>{type}</h3>
                             </div>
                         </div>
                         <div className='Name_class_confirm'>
@@ -91,20 +77,21 @@ return (
                         </div>
                         <div className='Name_class_confirm'>
                             <label id="Date">SESSION DATE</label><br/>
-                            <input type='date'id="Date" name="date" onChange={handleChange} value={data.date} required/>
+                            <div className="confirm_value">
+                                <h3>{date}</h3>
+                            </div>
                         </div>
                         <div className='Name_class_confirm'>
                             <label id="Time">SESSION TIME</label><br/>
-                            <select name="time" id="Time" minlength="1" onChange={handleChange} value={data.time} required>
-                                <option value=""></option>
-                                <option value="10:00 am">10:00 AM</option>
-                                <option value="11:00 am">11:00 AM</option>
-                                <option value="5:00 pm">5:00 PM</option>
-                                <option value="7:00 pm">7:00 PM</option>
-                            </select>
+                            <div className="confirm_value">
+                                <h3>{time}</h3>
+                            </div>
                         </div>
-                        <div className='confirm_sendbutton2'>
-                        <input type='submit' value="Confirm Appointment"/>
+                        <div className='Name_class_confirm'>
+                            <label id="Link">SESSION LINK</label><br/>
+                            <div className="confirm_value">
+                                <h3>{link}</h3>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -112,5 +99,5 @@ return (
     </div>
   );
  };   
-export default ConfirmPage;
+export default DashboardPage2;
     

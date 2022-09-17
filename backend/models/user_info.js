@@ -71,7 +71,7 @@ const userInfoSchema = new mongoose.Schema({
         },
         service_type:{
             type: String,
-            enum: ['Individual','Couples','Family'],
+            enum: ['Individual Psychotherapy','Couples Therapy','Family Therapy'],
             required : true,
         },
         therapist: {

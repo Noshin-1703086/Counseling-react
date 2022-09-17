@@ -1,10 +1,26 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import '../App.css';
 import './DashboardPage.css';
 import { Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
-function DashboardPage() {
+const DashboardPage=() => {
+  useEffect(() => {
+    axios.get('http://localhost:4000/api/get_session_info',{
+          params: {
+            token: localStorage.getItem('token')
+          }})
+          .then(res => {
+              if(res.data!=false)
+              {
+                  window.location = "/Dashboard_C";
+              }
+          }).catch(err => {
+            console.log(err)
+          })
+      })
+
   return (
     <div className='dash-container'>
       <div className='dash-text-container'>
