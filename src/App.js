@@ -18,6 +18,7 @@ import Dashboard from './components/pages/Dashboard';
 import Dashboard_C from './components/pages/Dashboard_C';
 import IPA from './components/pages/IPA';
 import Confirm from './components/pages/Confirm';
+import Report from './components/pages/Report';
 import PrivateRoutes from './utils/PrivateRoutes';
 import PrivateRoutes2 from './utils/PrivateRoutes2';
 
@@ -46,6 +47,7 @@ function App() {
         <Route path='/IPA' element={<IPA/>} />
         <Route path='/Confirm' element={<Confirm/>}/>
         <Route element={<Dashboard_C/>} path="/Dashboard_C"/>
+        <Route path='/report' element={<Report/>}/>
       </Route>
      </Routes>
      </Router>

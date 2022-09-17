@@ -79,7 +79,6 @@ const userInfoSchema = new mongoose.Schema({
             required : true,
             default: "Not Assigned",
         },
-
 });
 
 const UserInfo = mongoose.model("user_info",userInfoSchema);
