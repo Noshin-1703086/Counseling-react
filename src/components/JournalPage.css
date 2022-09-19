@@ -8,7 +8,7 @@
   text-align: center;
   width: 55vw;
   background-color: rgb(255,255,255,0.19);
-  margin-left: 100px;
+  margin-left: 30px;
 }
 .journal-date>label
 {
@@ -32,6 +32,10 @@
     margin-left: 350px;
     height: 30px;
     width: 300px;
+    padding-left: 40px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
 }
 
 
@@ -44,18 +48,19 @@
   object-fit: contain;
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: -10px;
 }
 
 .journal-container
   {
-    width:98.5vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     object-fit: contain;
     text-align: center;
+    margin-left: +350px;
   }
   .journal-head>h3
   {
@@ -75,8 +80,7 @@
     align-items: center;
     object-fit: contain;
     text-align: center;
-    width:64vw;
-    margin-left: 350px;
+    margin-left:30px;
   }
   .journal-text>form
   {
@@ -87,7 +91,6 @@
   {
     padding: 20px;
     width:55vw;
-    margin-left: -638px;
     border: none;
     outline: none;
     margin-top: 35px;
@@ -113,7 +116,7 @@
     font-family: 'Arial';
   }
   .journal_sendbutton2{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 40px;
   }
   .journal_sendbutton2>input:hover

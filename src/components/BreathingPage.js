@@ -26,10 +26,10 @@ const BreathingPage=() =>{
     <div className='breathing-head'>
         <h3>BREATHING EXERCISE</h3>
     </div>
-    <div className='box'>
-      <div class="zoom-in-out-box">
+    <div class="zoom-in-out-box2">
+    <div class="zoom-in-out-box">
       </div>
-    </div>
+      </div>
     <div className='breathing-head2'>
     <span> </span>
     </div>

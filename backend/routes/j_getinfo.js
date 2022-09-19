@@ -8,12 +8,9 @@ dotenv.config()
 
 router.get('/',async(req,res) => {
     try {
-        console.log(req);
-        const username=jwt.decode(req.body.params.token);
+        const username=jwt.decode(req.query.token);
         const user = await User.findOne({username:username.user});
-        console.log(user._id);
         const user2 = await JournalInfo.findOne({created_by:user,date:req.query.date});
-        console.log(req.body.params.data)
         if(user2)
         {
             res.send(user2.text)

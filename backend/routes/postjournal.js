@@ -10,8 +10,13 @@ router.post('/',async(req,res) => {
     try {
         const username=jwt.decode(req.body.params.token);
         const user = await User.findOne({username:username.user});
+        const user2 = await JournalInfo.findOne({created_by:user,date:req.body.params.data.date});
+        if(user2)
+        {
+            await JournalInfo.deleteOne({_id:user2});
+
+        }
         req.body.params.data.created_by=user;
-        console.log(req.body.params.data)
         await new JournalInfo({...req.body.params.data}).save();
         console.log("Created")
         res.status(201).send({message:"UserInfo created successfully"});     

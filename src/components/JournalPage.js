@@ -20,23 +20,21 @@ const JournalPage = () => {
           })
       })
       const [data, setData] = useState({
-		date: "",
+		    date:"",
         text:"",
 	});
-    const [prevtext, setText] = useState("");
     const handleChange2 = ({ currentTarget: input }) => {
-		setData({ ...data, [input.name]: input.value });
-        axios.get('http://localhost:4000/api/J_getinfo',{
-          params: {
-            token: localStorage.getItem('token'),
-            date: data.date,
-          }})
-          .then(res => {
-            setText(res.data);
-          }).catch(err => {
-            console.log(err)
-          })
-
+      setData({ ...data,[input.name]: input.value });
+      axios.get('http://localhost:4000/api/J_getinfo',{
+        params: {
+          token: localStorage.getItem('token'),
+          date: input.value,
+        }})
+        .then(res => {
+          setData({ ...data, text:res.data,[input.name]: input.value});
+        }).catch(err => {
+          console.log(err)
+        })
 	};
 	const handleChange = ({ currentTarget: input }) => {
 		setData({ ...data, [input.name]: input.value });
@@ -51,6 +49,7 @@ const JournalPage = () => {
                   token: localStorage.getItem('token'),
                   data: data,
                 }});
+                navigate("/journal");
             console.log(res.message);
             } catch (error) {
             console.log(error)
@@ -66,10 +65,11 @@ const JournalPage = () => {
                         <form onSubmit={handleSubmit}>
                             <div className='journal-date'>
                                 <label id="Date">DATE</label><br/>
-                                <input type='date'id="Date" name="date" onChange={handleChange2} value={data.date} required/>
+                                <input type='date' id="Date" name="date" onChange={handleChange2} value={data.date} required/>
                             </div>
                             <div className='journal-text'>
-                                <textarea type='textarea'id="Text" rows="1" cols="50" name="text" placeholder={prevtext} onChange={handleChange} value={data.text} required/>
+                                <textarea type='textarea' id="Text" rows="1" cols="46" name="text" 
+                                placeholder="List the things you are grateful for today!" onChange={handleChange} value={data.text} required/>
                             </div>
                             <div className='journal_sendbutton2'>
                                 <input type='submit' value="Save Changes"/>
