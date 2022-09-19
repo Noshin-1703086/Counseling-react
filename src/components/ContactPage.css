@@ -132,7 +132,7 @@
     width:100%;
     height:100%;
   }
-  input::-webkit-input-placeholder { 
+  .contact-text>form>div>input::-webkit-input-placeholder { 
     position: absolute;
     color: #094838;
     font-family: 'Blogger Sans Light';
@@ -142,7 +142,7 @@
     left: 20px;
     top:9px;
   }
-  input::placeholder {
+  .contact-text>form>div>input::placeholder {
     position: absolute;
     color: #094838;
     font-family: 'Blogger Sans Light';
@@ -152,10 +152,10 @@
     left: 20px;
     top:9px;
   }
-  input:focus::-webkit-input-placeholder {
+  .contact-text>form>div>input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
-textarea::-webkit-input-placeholder { 
+.contact-text>form>div>textarea::-webkit-input-placeholder { 
     position: absolute;
     color: #094838;
     font-family: 'Blogger Sans Light';
@@ -165,7 +165,7 @@ textarea::-webkit-input-placeholder {
     left: 20px;
     top:9px;
   }
-  textarea::placeholder {
+  .contact-text>form>div>textarea::placeholder {
     position: absolute;
     color: #094838;
     font-family: 'Blogger Sans Light';
@@ -175,7 +175,7 @@ textarea::-webkit-input-placeholder {
     left: 20px;
     top:9px;
   }
-  textarea:focus::-webkit-input-placeholder {
+  .contact-text>form>div>textarea:focus::-webkit-input-placeholder {
     opacity: 0;
 }
   input[name="Name"]

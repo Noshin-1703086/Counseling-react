@@ -14,7 +14,9 @@ const confirm_appRoutes = require("./routes/confirm_app")
 const session_infoRoutes = require("./routes/session_info")
 const getidRoutes = require("./routes/get_id")
 const postjournalRoutes = require("./routes/postjournal")
+const postnoteRoutes = require("./routes/postnote")
 const J_getinfoRoutes = require("./routes/j_getinfo")
+const N_getinfoRoutes = require("./routes/n_getinfo")
 
 dotenv.config()
 
@@ -32,7 +34,9 @@ app.use('/api/confirm', confirm_appRoutes)
 app.use('/api/get_session_info', session_infoRoutes)
 app.use('/api/Get_id', getidRoutes)
 app.use('/api/J_post', postjournalRoutes)
+app.use('/api/N_post', postnoteRoutes)
 app.use('/api/J_getinfo', J_getinfoRoutes)
+app.use('/api/N_getinfo', N_getinfoRoutes)
 
 const port = process.env.PORT || 4000;
 app.listen(port, console.log(`Listening on port ${port}...`));

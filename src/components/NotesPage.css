@@ -1,4 +1,4 @@
-.journal-date
+.note-date
 {
     display: flex;
   flex-direction: row;
@@ -10,7 +10,7 @@
   background-color: rgb(255,255,255,0.19);
   margin-left: 30px;
 }
-.journal-date>label
+.note-date>label
 {
     color:white;
     font-family: 'Nunito';
@@ -21,7 +21,7 @@
     margin-left: 50px;
     padding:10px;
 }
-.journal-date>input
+.note-date>input
 {
     color:#094838;
     font-family: 'Nunito';
@@ -37,9 +37,24 @@
     border: none;
     outline: none;
 }
-
-
-.journal-head
+.note-title>input
+{
+  margin-top: 20px;
+  width: 39vw;
+  height:5.2vh;
+  outline:none;
+  padding:10px;
+  border-width: 0 0 2px;
+  border-color: white;
+  background-color: rgb(255,255,255,0);
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Blogger Sans Light';
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+}
+.note-head
 {
   display: flex;
   flex-direction: column;
@@ -51,7 +66,7 @@
   margin-top: -10px;
 }
 
-.journal-container
+.note-container
   {
     width: auto;
     display: flex;
@@ -62,17 +77,17 @@
     text-align: center;
     margin-left: +350px;
   }
-  .journal-head>h3
+  .note-head>h3
   {
     font-size: 1.8rem;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color:white;
     font-family: 'Be Vietnam';
     text-align:center;
     font-weight: lighter;
   }
-  .journal-text{
+  .note-text{
     height:fit-content;
     display: flex;
     flex-direction: column;
@@ -82,12 +97,12 @@
     text-align: center;
     margin-left:30px;
   }
-  .journal-text>form
+  .note-text>form
   {
     width:100%;
     height:100%;
   }
-  .journal-text>textarea
+  .note-text>textarea
   {
     padding: 20px;
     width:55vw;
@@ -100,7 +115,7 @@
     font-family: 'Blogger Sans Light';
     font-weight: lighter;
   }
-  .journal_sendbutton2>input
+  .note_sendbutton2>input
   {
     display: inline-block;
     background-color: white;
@@ -115,20 +130,15 @@
     font-weight:bold;
     font-family: 'Arial';
   }
-  .journal_sendbutton2{
-    margin-top: 30px;
-    margin-bottom: 40px;
+  .note_sendbutton2{
+    margin-top: 15px;
+    margin-left: +40px;
   }
-  .journal_sendbutton2>input:hover
+  .note_sendbutton2>input:hover
   {
     background-color: rgb(255,255,255,0.8);
   }
-  .journal-text>textarea::-webkit-input-placeholder { 
-    color: #094838;
-  }
-  .journal-text>textarea::placeholder {
-    color: #094838;
-  }
-  .journal-text>textarea:focus::-webkit-input-placeholder {
+  .note-title>input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
+  
