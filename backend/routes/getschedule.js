@@ -12,8 +12,7 @@ router.get('/',async(req,res) => {
         console.log(username.user);
         const user = await User.findOne({username:username.user});
         const user2 = await UserInfo.findOne({_id:user});
-        const therapist = user2.therapist;
-        res.send(therapist);     
+        res.send(user2);     
     } catch (error) {
         res.status(500).send({message:"Internal Server Error"});
         console.log("Error")

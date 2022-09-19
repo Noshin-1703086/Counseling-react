@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import React,{useState,useEffect} from 'react';
 import '../App.css';
-import './ConfirmPage.css';
+import './ConfirmrPage.css';
 import axios from 'axios';
 
-const ConfirmPage = () => {
+const Confirm_rPage = () => {
   useEffect(() => {
     axios.get('http://localhost:4000/api/check_confirmation',{
       params: {
@@ -20,6 +20,7 @@ const ConfirmPage = () => {
       })
   })
   const [therapist, setTherapist] =useState('');
+  const [type, setType] =useState('');
   useEffect(() => {
   axios.get('http://localhost:4000/api/getschedule',{
         params: {
@@ -27,6 +28,7 @@ const ConfirmPage = () => {
         }})
         .then(res => {
             setTherapist(res.data.therapist);
+            setType(res.data.service_type);
             console.log(res.data);
         }).catch(err => {
           console.log(err)
@@ -48,7 +50,7 @@ const ConfirmPage = () => {
                 params: {
                   token: localStorage.getItem('token'),
                   data: data,
-                  type: "IPA"
+                  type: type
                 }});
             navigate("/Dashboard_C");
             console.log(res.message);
@@ -59,41 +61,41 @@ const ConfirmPage = () => {
     
 return (
     <div>
-            <div className='confirm-text-container'>
-                <div className='confirm-text'>
-                    <div className='confirm-head'>
+            <div className='confirmr-text-container'>
+                <div className='confirmr-text'>
+                    <div className='confirmr-head'>
                         <h3>APPOINTMENT INFORMATION</h3>
                     </div>
                     <form onSubmit={handleSubmit}>
-                        <div className='Name_class_confirm'>
+                        <div className='Name_class_confirmr'>
                             <label id="Type">TYPE OF SESSION</label><br/>
-                            <div className="confirm_value">
-                                <h3>Initial Psychological Assessment</h3>
+                            <div className="confirmr_value">
+                                <h3>Regular {type}</h3>
                             </div>
                         </div>
-                        <div className='Name_class_confirm'>
+                        <div className='Name_class_confirmr'>
                             <label id="Duration">SESSION DURATION</label><br/>
-                            <div className="confirm_value">
+                            <div className="confirmr_value">
                                 <h3>45 minutes</h3>
                             </div>
                         </div>
-                        <div className='Name_class_confirm'>
+                        <div className='Name_class_confirmr'>
                             <label id="Charge">SESSION CHARGE</label><br/>
-                            <div className="confirm_value">
+                            <div className="confirmr_value">
                                 <h3>Tk. 1500</h3>
                             </div>
                         </div>
-                        <div className='Name_class_confirm'>
+                        <div className='Name_class_confirmr'>
                             <label id="Therapist">THERAPIST</label><br/>
-                            <div className="confirm_value">
+                            <div className="confirmr_value">
                                 <h3>{therapist}</h3>
                             </div>
                         </div>
-                        <div className='Name_class_confirm'>
+                        <div className='Name_class_confirmr'>
                             <label id="Date">SESSION DATE</label><br/>
                             <input type='date'id="Date" name="date" onChange={handleChange} value={data.date} required/>
                         </div>
-                        <div className='Name_class_confirm'>
+                        <div className='Name_class_confirmr'>
                             <label id="Time">SESSION TIME</label><br/>
                             <select name="time" id="Time" minlength="1" onChange={handleChange} value={data.time} required>
                                 <option value=""></option>
@@ -103,7 +105,7 @@ return (
                                 <option value="7:00 pm">7:00 PM</option>
                             </select>
                         </div>
-                        <div className='confirm_sendbutton2'>
+                        <div className='confirmr_sendbutton2'>
                         <input type='submit' value="Confirm Appointment"/>
                         </div>
                     </form>
@@ -112,5 +114,5 @@ return (
     </div>
   );
  };   
-export default ConfirmPage;
+export default Confirm_rPage;
     

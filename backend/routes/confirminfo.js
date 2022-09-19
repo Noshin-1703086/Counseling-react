@@ -9,8 +9,8 @@ router.get("/",async(req,res) => {
     const token = req.query.token;
     const username=jwt.decode(token);
     const user = await User.findOne({username:username.user});
-    const user2 = await PaymentInfo.findOne({_id:user});
-    if(user2 && user2.confirmation==true)
+    const user2 = await PaymentInfo.findOne({created_by:user,confirmation:true});
+    if(user2)
     {
         res.send(true);
     }

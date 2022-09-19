@@ -22,6 +22,8 @@ import Report from './components/pages/Report';
 import Breathing from './components/pages/Breathing';
 import Journal from './components/pages/Journal';
 import Notes from './components/pages/Notes';
+import Book_r from './components/pages/Book_r';
+import Confirm_r from './components/pages/Confirm_r';
 import PrivateRoutes from './utils/PrivateRoutes';
 import PrivateRoutes2 from './utils/PrivateRoutes2';
 
@@ -54,6 +56,8 @@ function App() {
         <Route path='/breathing' element={<Breathing/>}/>
         <Route path='/journal' element={<Journal/>}/>
         <Route path='/notes' element={<Notes/>}/>
+        <Route path='/book_r' element={<Book_r/>}/>
+        <Route path='/Confirm_r' element={<Confirm_r/>}/>
       </Route>
      </Routes>
      </Router>

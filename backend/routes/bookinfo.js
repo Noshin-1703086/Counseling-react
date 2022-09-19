@@ -11,7 +11,8 @@ router.post('/',async(req,res) => {
     try {
         const username=jwt.decode(req.body.params.token);
         const user = await User.findOne({username:username.user});
-        req.body.params.data._id=user;
+        req.body.params.data.created_by=user;
+        req.body.params.data.r_type="IPA";
         console.log(req.body.params.data)
         await new UserInfo({...req.body.params.data}).save();
         await new PaymentInfo({...req.body.params.data}).save();

@@ -51,6 +51,11 @@ function Navbar3() {
           </li>
           <li className='nav-item3'>
             <NavLink to = '/book_r' className={(navData) => navData.isActive ? 'nav-links3 active': 'nav-links3'} onClick={closeMobileMenu}>
+              PAYMENT INFORMATION
+            </NavLink>
+          </li>
+          <li className='nav-item3'>
+            <NavLink to = '/Confirm_r' className={(navData) => navData.isActive ? 'nav-links3 active': 'nav-links3'} onClick={closeMobileMenu}>
               BOOK REGULAR SESSION
             </NavLink>
           </li>

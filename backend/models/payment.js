@@ -3,7 +3,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 const paymentInfoSchema = new mongoose.Schema({
-      _id:{
+      created_by:{
         type:mongoose.Schema.Types.ObjectId, ref: 'User',
         required:true
         },
@@ -14,6 +14,11 @@ const paymentInfoSchema = new mongoose.Schema({
         transaction_no: {
             type: String,
             required : true,
+        },
+        r_type: {
+            type: String,
+            required : true,
+            default: "IPA"
         },
         confirmation: {
             type: Boolean,
