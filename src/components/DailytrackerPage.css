@@ -1,0 +1,140 @@
+.daily_track-head
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  text-align: center;
+  margin-left: 30%;
+}
+.daily_track-text-container
+  {
+    background-color: #094838;
+    width:98.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+  }
+  .daily_track-head>h3
+  {
+    font-size: 1.7rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color:white;
+    font-family: 'Be Vietnam';
+    text-align:center;
+    font-weight: lighter;
+  }
+  .daily_track-text{
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+    width:100%;
+  }
+  .daily_track_partition1
+  {
+    width:55vw;
+    margin-left: 36.3%;
+  }
+  .daily_track_partition1>div:last-child
+  {
+    margin-bottom: 7px;
+  }
+  .Name_class_daily_track
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    object-fit: contain;
+    text-align: left;
+    margin: auto;
+    width:45vw;
+    margin-top: 13px;
+  }
+  .Name_class_daily_track div:last-child {
+    margin-left: auto;
+    
+  }
+  .Name_class_daily_track>label
+  {
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    font-size: 0.9rem;
+  }
+  .daily_track-text>form
+  {
+    width:100%;
+    height:100%;
+  }
+  .daily_track-text>form>.daily_track_partition1
+  {
+    background-color: rgb(255,255,255,0.19);
+    padding-top: 1px;
+    padding-bottom: 9px;
+    margin-bottom: 12px;
+  }
+  .Name_class_daily_track>input
+  {
+    outline:none;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    margin-left: auto;
+    width: 300px;
+    height: 28px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 10px;
+    color:#094838;
+    text-transform: uppercase;
+  }
+  .Name_class_daily_track>select
+  {
+    outline:none;
+    color:#094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    margin-left: auto;
+    width: 300px;
+    height: 28px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  .daily_track_sendbutton2>input
+  {
+    display: inline-block;
+    background-color: white;
+    border: none;
+    color: #094838;
+    text-align: center;
+    font-size: 19px;
+    padding: 7px;
+    width: 14vw;
+    cursor: pointer;
+    font-weight:bold;
+    font-family: 'Arial';
+  }
+  .daily_track_sendbutton2{
+    margin-left: 28.3vw;
+    margin-top: 18px;
+  }
+  .daily_track_sendbutton2>input:hover
+  {
+    background-color: rgb(255,255,255,0.8);
+  }

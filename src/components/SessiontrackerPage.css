@@ -1,0 +1,221 @@
+.s_assess-head
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  text-align: center;
+  margin-left: 30%;
+}
+.s_assess-head2
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  object-fit: contain;
+  text-align: left;
+  margin-left: 36.19%;
+}
+.s_assess-head3
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  object-fit: contain;
+  text-align: left;
+  margin-left: 36.19%;
+  grid-gap:346px;
+}
+.s_assess-head3>h3
+{
+  font-size: 1.1rem;
+  color:#9cfee9;
+  font-family: 'Be Vietnam';
+  font-weight: lighter;
+}
+.s_assess-head2>h3
+{
+  font-size: 1.1rem;
+  color:#9cfee9;
+  font-family: 'Be Vietnam';
+  font-weight: lighter;
+}
+.s_assess-text-container
+  {
+    background-color: #094838;
+    width:98.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+  }
+  .s_assess-head>h3
+  {
+    font-size: 1.7rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color:white;
+    font-family: 'Be Vietnam';
+    text-align:center;
+    font-weight: lighter;
+  }
+  .s_assess-text{
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+    width:100%;
+  }
+  .partition1
+  {
+    width:55vw;
+    margin-left: 36.3%;
+  }
+  .Name_class_s_assess
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    object-fit: contain;
+    text-align: left;
+    margin: auto;
+    width:45vw;
+    margin-top: 8.5px;
+  }
+  .Name_class_s_assess div:last-child {
+    margin-left: auto;
+    
+  }
+  .Name_class_s_assess>label
+  {
+    color:white;
+    font-family: 'Nunito';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    font-size: 0.85rem;
+  }
+  .Name_class_s_assess2
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    object-fit: contain;
+    text-align: left;
+    margin: auto;
+    width:55vw;
+    margin-top: 10px;
+    margin-left: 36.3%;
+  }
+  .Name_class_s_assess2>textarea
+  {
+    padding: 20px;
+    width:100%;
+    border: none;
+    outline: none;
+    height:19vh;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    margin-bottom: 8px;
+    background-color: rgb(255,255,255,0.19);
+  }
+  .Name_class_s_assess2>textarea#new_homework{
+    width:47%;
+  }
+  .Name_class_s_assess2>textarea#agenda{
+    width:47%;
+    margin-left: 6%;
+  }
+  .Name_class_s_assess2>textarea::placeholder {
+    color: white;
+    opacity: 1;
+  }
+  
+  .Name_class_s_assess2>textarea:-ms-input-placeholder {
+    color: white;
+  }
+  
+  .Name_class_s_assess2>textarea::-ms-input-placeholder {
+    color: white;
+  }
+  .Name_class_s_assess2>textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+  
+  .s_assess-text>form
+  {
+    width:100%;
+    height:100%;
+  }
+  .s_assess-text>form>.partition1
+  {
+    background-color: rgb(255,255,255,0.19);
+    padding-top: 1px;
+    padding-bottom: 9px;
+    margin-bottom: 7px;
+  }
+  .Name_class_s_assess>input
+  {
+    outline:none;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    margin-left: auto;
+    width: 300px;
+    height: 27px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 10px;
+    color:#094838;
+    text-transform: uppercase;
+  }
+  .Name_class_s_assess>select
+  {
+    outline:none;
+    color:#094838;
+    font-size: 1rem;
+    font-family: 'Blogger Sans Light';
+    font-weight: lighter;
+    background-color: white;
+    margin-left: auto;
+    width: 300px;
+    height: 28px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  .s_assess_sendbutton2>input
+  {
+    display: inline-block;
+    background-color: white;
+    border: none;
+    color: #094838;
+    text-align: center;
+    font-size: 19px;
+    padding: 7px;
+    width: 14vw;
+    cursor: pointer;
+    font-weight:bold;
+    font-family: 'Arial';
+  }
+  .s_assess_sendbutton2{
+    margin-left: 28.3vw;
+    margin-top: 5px;
+  }
+  .s_assess_sendbutton2>input:hover
+  {
+    background-color: rgb(255,255,255,0.8);
+  }

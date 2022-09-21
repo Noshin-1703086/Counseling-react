@@ -4,7 +4,7 @@ import '../App.css';
 import './ConfirmrPage.css';
 import axios from 'axios';
 
-const Confirm_rPage = () => {
+const ConfirmrPage = () => {
   useEffect(() => {
     axios.get('http://localhost:4000/api/check_confirmation',{
       params: {
@@ -114,5 +114,5 @@ return (
     </div>
   );
  };   
-export default Confirm_rPage;
+export default ConfirmrPage;
     

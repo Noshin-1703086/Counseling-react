@@ -18,6 +18,10 @@ const postjournalRoutes = require("./routes/postjournal")
 const postnoteRoutes = require("./routes/postnote")
 const J_getinfoRoutes = require("./routes/j_getinfo")
 const N_getinfoRoutes = require("./routes/n_getinfo")
+const session_trackRoutes = require("./routes/sessiontrack")
+const daily_trackRoutes = require("./routes/dailytrack")
+const session_track_getinfoRoutes = require("./routes/sessiontrack_getinfo")
+const daily_track_getinfoRoutes = require("./routes/dailytrack_getinfo")
 
 dotenv.config()
 
@@ -39,6 +43,10 @@ app.use('/api/J_post', postjournalRoutes)
 app.use('/api/N_post', postnoteRoutes)
 app.use('/api/J_getinfo', J_getinfoRoutes)
 app.use('/api/N_getinfo', N_getinfoRoutes)
+app.use('/api/session_track', session_trackRoutes)
+app.use('/api/daily_track', daily_trackRoutes)
+app.use('/api/session_track_getinfo', session_track_getinfoRoutes)
+app.use('/api/daily_track_getinfo', daily_track_getinfoRoutes)
 
 const port = process.env.PORT || 4000;
 app.listen(port, console.log(`Listening on port ${port}...`));

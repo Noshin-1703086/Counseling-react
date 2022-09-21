@@ -24,6 +24,8 @@ import Journal from './components/pages/Journal';
 import Notes from './components/pages/Notes';
 import Book_r from './components/pages/Book_r';
 import Confirm_r from './components/pages/Confirm_r';
+import Sessiontracker from './components/pages/Sessiontracker';
+import Dailytracker from './components/pages/Dailytracker';
 import PrivateRoutes from './utils/PrivateRoutes';
 import PrivateRoutes2 from './utils/PrivateRoutes2';
 
@@ -58,6 +60,8 @@ function App() {
         <Route path='/notes' element={<Notes/>}/>
         <Route path='/book_r' element={<Book_r/>}/>
         <Route path='/Confirm_r' element={<Confirm_r/>}/>
+        <Route path='/sessiontracker' element={<Sessiontracker/>}/>
+        <Route path='/dailytracker' element={<Dailytracker/>}/>
       </Route>
      </Routes>
      </Router>
