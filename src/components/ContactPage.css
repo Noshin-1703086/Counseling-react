@@ -132,6 +132,16 @@
     width:100%;
     height:100%;
   }
+  .contact-text>form>div>input
+  {
+    font-size: 1.2rem;
+    color: #094838;
+  }
+  .contact-text>form>div>textarea
+  {
+    font-size: 1.2rem;
+    color: #094838;
+  }
   .contact-text>form>div>input::-webkit-input-placeholder { 
     position: absolute;
     color: #094838;
@@ -151,6 +161,9 @@
     text-align: left;
     left: 20px;
     top:9px;
+  }
+  .contact-text>form>div>input:focus::placeholder {
+    opacity: 0;
   }
   .contact-text>form>div>input:focus::-webkit-input-placeholder {
     opacity: 0;
@@ -178,7 +191,7 @@
   .contact-text>form>div>textarea:focus::-webkit-input-placeholder {
     opacity: 0;
 }
-  input[name="Name"]
+  input[name="name"]
   {
     margin-top: 5%;
     width: 39vw;
@@ -187,7 +200,7 @@
     outline:none;
     padding:20px;
   }
-  input[name="Email"]
+  input[name="email"]
   {
     width: 39vw;
     height:5.2vh;
@@ -195,7 +208,7 @@
     outline:none;
     padding:20px;
   }
-  textarea[name="Message"]
+  textarea[name="message"]
   {
     width: 39vw;
     height:23vh;
@@ -219,6 +232,10 @@
     font-weight: bold;
     font-family: 'Be Vietnam';
     letter-spacing: 1.5px;
+  }
+  .contact-text>form>.sendbutton>button:hover
+  {
+    background-color: rgb(9, 72, 56,0.7);
   }
   .contact-head> h3 {
     margin-top: 40px;

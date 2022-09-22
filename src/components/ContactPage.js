@@ -1,8 +1,28 @@
-import React from 'react';
+import React,{useState} from 'react';
 import '../App.css';
 import './ContactPage.css';
+import axios from 'axios';
 
 function ContactPage() {
+    const [data, setData] = useState({
+        name:"",
+        email:"",
+        message:"",
+});
+const handleChange = ({ currentTarget: input }) => {
+    setData({ ...data, [input.name]: input.value });
+};
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+        const url = "http://localhost:4000/api/Contact_post";
+        const { data: res } = await axios.post(url,data);
+        console.log(res.message);
+        } 
+    catch (error) {
+        console.log(error)
+        }
+    };
   return (
     <div>
       <div className='contact-container'>
@@ -11,15 +31,15 @@ function ContactPage() {
             </div>
             <div className='contact-text-container'>
                 <div className='contact-text'>
-                    <form action="">
+                    <form onSubmit={handleSubmit}>
                         <div>
-                            <input type="text" name="Name" id="Name" placeholder='NAME'/>
+                            <input type="text" name="name" id="name" placeholder='NAME' onChange={handleChange} value={data.name} required/>
                         </div>
                         <div>
-                            <input type="text" name="Email" id="Email" placeholder='EMAIL'/>
+                            <input type="email" name="email" id="email" placeholder='EMAIL' onChange={handleChange} value={data.email} required/>
                         </div>
                         <div>
-                            <textarea type="text" name="Message" id="Message" placeholder='MESSAGE'/>
+                            <textarea type="text" name="message" id="message" placeholder='MESSAGE' onChange={handleChange} value={data.message} required/>
                         </div>
                         <div className='sendbutton'>
                         <button type='Submit'>SEND</button>
